@@ -1,0 +1,51 @@
+/** @format */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header-container {
+  height: 50;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-column-gap: 2rem;
+          column-gap: 2rem;
+  margin: 1rem;
+  margin-top: 0.2rem;
+  margin-left: 10rem;
+}
+
+.header-container img {
+  width: 12.5rem;
+}
+
+.header-container .headerIntro {
+  font: 1rem sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.header-container .headerIntro a {
+  margin-top: 5;
+  color: #006bcd;
+  text-decoration: none;
+}
+
+.header-container .headerIntro a:hover {
+  color: #00aaeb;
+}
+/*# sourceMappingURL=mynavi.css.map */
