@@ -1,9 +1,4 @@
 /** @format */
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -55,53 +50,19 @@ body {
 }
 
 .nav-container {
+  height: 50;
+  margin: 10;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  list-style: none;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border: 1px solid #e2e2e2;
-  margin-top: 26.5;
-  margin-bottom: 0;
+  padding: 15;
 }
 
-.nav-container .nav2 {
-  bottom: 3;
+.nav-container div {
+  padding: 18;
 }
 
-.nav-container li {
-  position: relative;
-  width: 150;
-  height: 45;
-  text-align: center;
-  padding: 14;
-  text-align: center;
-}
-
-.nav-container a {
-  text-decoration: none;
-  font-size: 15;
-  color: rgba(12, 11, 11, 0.795);
-}
-
-.nav-container li:hover {
-  border-top: 2.5px solid #00aaeb;
-}
-
-main {
-  height: auto;
-}
-
-main .notice-container {
-  height: 100;
-  background-color: rgba(255, 255, 255, 0.062);
+.nav-sp {
+  padding-bottom: 10;
 }
 /*# sourceMappingURL=mynavi.css.map */
