@@ -149,7 +149,7 @@ main {
 }
 
 .btn-2:hover {
-  opacity: 0.7;
+  opacity: 0.8;
   color: #00aaeb;
 }
 
@@ -162,5 +162,95 @@ main {
 .noticebox div:hover {
   color: #00aaeb;
   cursor: pointer;
+}
+
+.section-container {
+  position: relative;
+  width: 1440;
+  height: 380;
+}
+
+.section-img {
+  position: absolute;
+  right: -240;
+}
+
+.section-img2 {
+  position: absolute;
+  right: 535;
+  top: 31;
+}
+
+.section-box {
+  position: absolute;
+  background-color: white;
+  border-radius: 10px;
+  -webkit-box-shadow: 1px 1px 8px #cccbcb;
+          box-shadow: 1px 1px 8px #cccbcb;
+  height: 355;
+  width: 600;
+  left: 155;
+  top: 14;
+}
+
+.section-menubox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.section-menubox .section-menu {
+  background-color: white;
+  border-top: 4.5px solid #00aaeb;
+  text-align: center;
+  width: 50%;
+  height: 65;
+}
+
+.section-menubox .section-menu2 {
+  background-color: #f0f0f096;
+  text-align: center;
+  width: 50%;
+  height: 65;
+}
+
+.section-tag {
+  position: absolute;
+  color: #006bcd;
+  font-weight: 350;
+  font-size: 44;
+  right: 205;
+  top: 37;
+}
+
+.section-tag2 {
+  position: absolute;
+  color: #006bcd;
+  font-size: 82;
+  font-weight: bold;
+  right: 285;
+  top: 82;
+}
+
+.section-tag2-1 {
+  position: absolute;
+  color: #006bcd;
+  font-size: 35;
+  right: 160;
+  top: 120;
+}
+
+.section-tag2-2 {
+  position: absolute;
+  color: #006bcd;
+  right: 270;
+  top: 95;
+  font-weight: 350;
 }
 /*# sourceMappingURL=mynavi.css.map */
