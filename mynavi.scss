@@ -2,14 +2,16 @@
 $primary-color: #f57c31;
 $secondary-color: #f1f1f1;
 $third-color: #006bcd;
+$border-color: rgb(204, 203, 203);
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  padding: 0;
+  width: 1440px;
+  height: auto;
+  margin: 0 auto;
 }
 
 .header-container {
@@ -160,8 +162,8 @@ main {
   background-color: white;
   border-radius: 10px;
   box-shadow: 1px 1px 8px rgb(204, 203, 203);
-  height: 355;
-  width: 600;
+  height: 355px;
+  width: 600px;
   left: 155;
   top: 14;
 }
@@ -169,19 +171,117 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  font-size: 14;
 
   .section-menu {
     background-color: white;
     border-top: 4.5px solid #00aaeb;
+
     text-align: center;
     width: 50%;
-    height: 65;
+    height: 55;
+    padding: 15;
+    cursor: pointer;
   }
+  .section-menu:hover {
+    opacity: 0.7;
+  }
+
   .section-menu2 {
-    background-color: #f0f0f096;
+    background-color: white;
+    box-shadow: 1px 0.5px 2px 1px rgb(204, 203, 203);
     text-align: center;
     width: 50%;
-    height: 65;
+    height: 55;
+    padding: 15;
+    cursor: pointer;
+  }
+  .section-menu2:hover {
+    opacity: 0.7;
+  }
+}
+
+.section-box-inner {
+  height: 300;
+  padding: 15;
+
+  .section-box-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 14px;
+    width: 530;
+  }
+  .box-number {
+    font-size: 18;
+    font-weight: bold;
+    color: $third-color;
+  }
+
+  span {
+    font-size: 19.5;
+  }
+
+  div {
+    font-size: 13.3;
+  }
+}
+
+.section-box-search {
+  input {
+    background-color: rgb(252, 250, 250);
+    border: 1px solid $border-color;
+    margin: 12;
+    width: 400;
+    height: 47;
+    padding: 7;
+    border-radius: 2px;
+  }
+  input::placeholder {
+    padding: 3;
+    font-size: 17;
+    font-weight: 300;
+    color: rgba(24, 24, 24, 0.952);
+  }
+
+  button {
+    width: 120px;
+    height: 47px;
+    border-radius: 1px;
+    background-color: $primary-color;
+    color: white;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    font-size: 15;
+  }
+}
+
+.section-box-form {
+  padding: 11px;
+
+  select {
+    background-color: rgb(252, 250, 250);
+    color: rgb(95, 95, 95);
+    border: 1px solid $border-color;
+    border-radius: 3px;
+    width: 131;
+    height: 50;
+    font-size: 15;
+    gap: 30px;
+  }
+
+  button {
+    width: 120px;
+    height: 47px;
+    border-radius: 1px;
+    background-color: $primary-color;
+    color: white;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    font-size: 15;
+    margin-left: 10.5;
   }
 }
 
