@@ -51,18 +51,19 @@ body {
   display: flex;
   flex-direction: row;
   list-style: none;
-  justify-content: space-around;
   justify-content: center;
+  align-items: center;
   border: 1px solid #e2e2e2;
   margin-top: 26.5;
   margin-bottom: 0;
+  padding-left: 0;
   .nav2 {
     bottom: 3;
   }
 
   li {
     position: relative;
-    width: 150;
+    width: 140;
     height: 45;
     text-align: center;
     padding: 14;
@@ -148,7 +149,7 @@ main {
 
 .section-img {
   position: absolute;
-  right: -240;
+  right: -1;
 }
 
 .section-img2 {
@@ -301,8 +302,6 @@ main {
 }
 
 .section-checkbox {
-  height: auto;
-  width: auto;
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
@@ -316,10 +315,15 @@ main {
 }
 
 #checkbox-bottom {
+  position: relative;
+  bottom: 7;
+  left: 10;
   font-size: 15;
   text-decoration-line: none;
   color: #006bcd;
-  margin: 0 0 10px 10px;
+}
+#checkbox-bottom:hover {
+  color: #349eff;
 }
 
 .section-tag {
@@ -375,4 +379,78 @@ main {
 .section-btn:hover {
   opacity: 0.7;
   color: #349eff;
+}
+
+.category {
+  height: 140;
+  width: 1440;
+
+  .category-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 25px 150px;
+
+    .category-1 {
+      width: 250;
+      height: 80;
+      background-color: white;
+      text-align: center;
+      font-size: 15;
+      padding: 20;
+      color: $third-color;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .category {
+      width: 250;
+      height: 80;
+      background-color: white;
+      text-align: center;
+      font-size: 15;
+      padding: 21;
+      color: $third-color;
+      font-weight: 700;
+      cursor: pointer;
+    }
+  }
+}
+
+.self-eval {
+  width: 1420px;
+  height: 400px;
+}
+
+.self-eval-container {
+  position: relative;
+  width: 1100;
+  height: 235;
+  left: 170;
+  background-color: white;
+  padding: 37;
+  box-shadow: 1px 1px 8px #cccbcb;
+  border-radius: 2;
+
+  .self-eval-title {
+    font-size: 20;
+    border-left: 2px solid #349eff;
+  }
+  .self-eval-inner {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20;
+
+    .self-eval-box1 {
+      display: flex;
+      flex-direction: row;
+
+      .self-eval-label {
+        border: 2px solid blue;
+      }
+    }
+  }
 }

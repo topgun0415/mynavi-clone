@@ -64,14 +64,16 @@ body {
       -ms-flex-direction: row;
           flex-direction: row;
   list-style: none;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border: 1px solid #e2e2e2;
   margin-top: 26.5;
   margin-bottom: 0;
+  padding-left: 0;
 }
 
 .nav-container .nav2 {
@@ -80,7 +82,7 @@ body {
 
 .nav-container li {
   position: relative;
-  width: 150;
+  width: 140;
   height: 45;
   text-align: center;
   padding: 14;
@@ -173,7 +175,7 @@ main {
 
 .section-img {
   position: absolute;
-  right: -240;
+  right: -1;
 }
 
 .section-img2 {
@@ -364,8 +366,6 @@ main {
 }
 
 .section-checkbox {
-  height: auto;
-  width: auto;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 1fr 1fr;
@@ -382,11 +382,17 @@ main {
 }
 
 #checkbox-bottom {
+  position: relative;
+  bottom: 7;
+  left: 10;
   font-size: 15;
   -webkit-text-decoration-line: none;
           text-decoration-line: none;
   color: #006bcd;
-  margin: 0 0 10px 10px;
+}
+
+#checkbox-bottom:hover {
+  color: #349eff;
 }
 
 .section-tag {
@@ -442,5 +448,102 @@ main {
 .section-btn:hover {
   opacity: 0.7;
   color: #349eff;
+}
+
+.category {
+  height: 140;
+  width: 1440;
+}
+
+.category .category-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 25px 150px;
+}
+
+.category .category-container .category-1 {
+  width: 250;
+  height: 80;
+  background-color: white;
+  text-align: center;
+  font-size: 15;
+  padding: 20;
+  color: #006bcd;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.category .category-container .category {
+  width: 250;
+  height: 80;
+  background-color: white;
+  text-align: center;
+  font-size: 15;
+  padding: 21;
+  color: #006bcd;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.self-eval {
+  width: 1420px;
+  height: 400px;
+}
+
+.self-eval-container {
+  position: relative;
+  width: 1100;
+  height: 235;
+  left: 170;
+  background-color: white;
+  padding: 37;
+  -webkit-box-shadow: 1px 1px 8px #cccbcb;
+          box-shadow: 1px 1px 8px #cccbcb;
+  border-radius: 2;
+}
+
+.self-eval-container .self-eval-title {
+  font-size: 20;
+  border-left: 2px solid #349eff;
+}
+
+.self-eval-container .self-eval-inner {
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20;
+}
+
+.self-eval-container .self-eval-inner .self-eval-box1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.self-eval-container .self-eval-inner .self-eval-box1 .self-eval-label {
+  border: 2px solid blue;
 }
 /*# sourceMappingURL=mynavi.css.map */
