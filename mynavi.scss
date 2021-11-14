@@ -3,6 +3,7 @@ $primary-color: #f57c31;
 $secondary-color: #f1f1f1;
 $third-color: #006bcd;
 $border-color: rgb(204, 203, 203);
+$hover-color: #349eff;
 
 * {
   box-sizing: border-box;
@@ -415,8 +416,17 @@ main {
       font-weight: 700;
       cursor: pointer;
     }
+
+    .category:hover {
+      opacity: 0.8;
+    }
+    .category-1:hover {
+      opacity: 0.8;
+    }
   }
 }
+
+// self-evaluation
 
 .self-eval {
   width: 1420px;
@@ -426,10 +436,10 @@ main {
 .self-eval-container {
   position: relative;
   width: 1100;
-  height: 235;
+  height: 205;
   left: 170;
   background-color: white;
-  padding: 37;
+  padding: 30;
   box-shadow: 1px 1px 8px #cccbcb;
   border-radius: 2;
 
@@ -438,19 +448,104 @@ main {
     border-left: 2px solid #349eff;
   }
   .self-eval-inner {
-    width: auto;
+    width: 880;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 20;
 
     .self-eval-box1 {
+      width: 300;
       display: flex;
       flex-direction: row;
+      justify-content: space-evenly;
+      gap: 14px;
+    }
 
-      .self-eval-label {
-        border: 2px solid blue;
-      }
+    .self-eval-lable {
+      text-align: center;
+      border-radius: 9px;
+      background-color: #3c91cc;
+      color: white;
+      font-size: 14;
+      width: 150;
+      border: 0px solid $third-color;
+    }
+
+    #self-eval-test {
+      position: relative;
+      font-size: 18;
+      top: 10;
+      color: #006bcd;
+      text-decoration: none;
+    }
+    #self-eval-test:hover {
+      color: #349eff;
+    }
+
+    #self-eval-test2 {
+      text-align: center;
+      position: relative;
+      top: 10.5;
+      width: 220;
+      font-size: 12.5;
+      background-color: #f3f3f3;
+      font-weight: bold;
+    }
+
+    .self-eval-btn {
+      position: relative;
+      left: 300;
+      bottom: 50;
+      width: 80px;
+      height: 36px;
+      border-radius: 1px;
+      background-color: $primary-color;
+      color: white;
+      text-align: center;
+      cursor: pointer;
+      font-size: 15;
+      padding: 5;
+    }
+    .self-eval-btn:hover {
+      opacity: 0.7;
+    }
+
+    .self-eval-box2 {
+      width: 300;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      gap: 14px;
+    }
+
+    .self-eval-lable2 {
+      text-align: center;
+      border-radius: 9px;
+      background-color: #3c91cc;
+      color: white;
+      font-size: 14;
+      width: 180;
+      height: 22;
+      padding: 2.5;
+      border: 0px solid $third-color;
+    }
+    .self-eval-btn2 {
+      position: relative;
+      left: 280;
+      bottom: 32;
+      width: 80px;
+      height: 36px;
+      border-radius: 1px;
+      background-color: $primary-color;
+      color: white;
+      text-align: center;
+      cursor: pointer;
+      font-size: 15;
+      padding: 5;
+    }
+    .self-eval-btn2:hover {
+      opacity: 0.7;
     }
   }
 }
